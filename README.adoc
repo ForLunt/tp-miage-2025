@@ -73,7 +73,13 @@ La règle n'est pas facilement testable car dans un premier temps elle est priv�
 docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 ```
 *Expliquer cette ligne de commande (y compris les options utilisées)*
+*  `docker run`: lance un contener pour `postgres` on l'initialise avec le mot de passe `POSTGRES_PASSWORD=password`
 
+*  `-it` lance le contener en mode interaction
+
+*  `-e` représente la variable d'environement pour le contener
+
+*  `-p` publie le contener
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
 
 *Pourquoi `todoItemRepository` est-il `null` ? Quelle est la meilleure façon de l'injecter ?*
