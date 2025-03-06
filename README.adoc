@@ -73,6 +73,7 @@ La règle n'est pas facilement testable car dans un premier temps elle est priv�
 docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 ```
 *Expliquer cette ligne de commande (y compris les options utilisées)*
+
 *  `docker run`: lance un contener pour `postgres` on l'initialise avec le mot de passe `POSTGRES_PASSWORD=password`
 
 *  `-it` lance le contener en mode interaction
@@ -80,10 +81,11 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 *  `-e` représente la variable d'environement pour le contener
 
 *  `-p` publie le contener
+
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
 
 *Pourquoi `todoItemRepository` est-il `null` ? Quelle est la meilleure façon de l'injecter ?*
-
+`todoItemRepository` est null car elle n'est pas initialisée. La meilleur facon de l'injecter est d'utilisé `@Autowired`
 * Modifier le code en conséquence.
 
 * Tester vos endpoints avec un client REST.
@@ -128,7 +130,8 @@ Source : http://leanpub.com/get-your-hands-dirty-on-clean-architecture[Tom Hombe
   - la couche `domain` qui contient les entités (au sens DDD, pas au sens JPA). En général des classes complexes (méthodes riches, relations entre les entités)
 
 *Rappeler en quelques lignes les grands principes de l'architecture hexagonale.*
-
+L'architecture hexagonale sépare la logique métier du système des dépendances externes (bases de données, UI, API) en utilisant des ports (interfaces) et des adaptateurs (composants spécifiques aux technologies). Cela permet de rendre l'application plus testable, flexible et indépendante des choix technologiques. Le cœur de l'application reste centré sur les règles métier et n'est pas affecté par les évolutions externes.
+ 
 Compléter ce code avec une fonctionnalité de création de `TodoItem`  persisté en base et appelé depuis un endpoint REST `POST /todos` qui :
 
 * prend un `TodoItem` au format JSON dans le body (voir exemple de contenu plus haut);
