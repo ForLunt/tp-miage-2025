@@ -113,7 +113,7 @@ image ::images/envoieDonnee.png[]
 
 * Vérifier avec DBeaver que les données sont bien en base PostgreSQL.
 
-image ::images/receptionDBeaver.png[]
+image::images/receptionDBeaver.png[]
 
 ### Exercice 2 - Refactoring en architecture hexagonale
 _Temps estimé : 1 h 20_
@@ -139,7 +139,7 @@ Compléter ce code avec une fonctionnalité de création de `TodoItem`  persist�
 
 La fonctionnalité à implémenter est contractualisée par le port d’entrée `AddTodoItem`.
 
-image ::images/Envoieexo2.png[]
+image::images/Envoieexo2.png[]
 
 ### Exercice 3 - Ecriture de tests
 _Temps estimé : 20 mins_
