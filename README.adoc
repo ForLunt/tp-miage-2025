@@ -107,13 +107,13 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 
 NOTE : Pour lancer l’application Spring, sélectionner la classe `TodolistApplication` et faire bouton droit -> 'Run as' -> 'Java Application'.
 
-image ::images/envoieDonnee.png []
+image ::images/envoieDonnee.png[]
 
 * Quand le nouveau endpoint fonctionne, commiter, faire un push vers Github.
 
 * Vérifier avec DBeaver que les données sont bien en base PostgreSQL.
 
-image ::images/receptionDBeaver.png []
+image ::images/receptionDBeaver.png[]
 
 ### Exercice 2 - Refactoring en architecture hexagonale
 _Temps estimé : 1 h 20_
@@ -122,7 +122,7 @@ _Temps estimé : 1 h 20_
 
 NOTE : Le projet a été réusiné suivant les principes de l’architecture hexagonale : 
 
-image::images/archi_hexagonale.png []
+image::images/archi_hexagonale.png[]
 Source : http://leanpub.com/get-your-hands-dirty-on-clean-architecture[Tom Hombergs]
 
 * Nous avons découpé le coeur en deux couches : 
@@ -139,7 +139,7 @@ Compléter ce code avec une fonctionnalité de création de `TodoItem`  persist�
 
 La fonctionnalité à implémenter est contractualisée par le port d’entrée `AddTodoItem`.
 
-image ::images/Envoieexo2.png []
+image ::images/Envoieexo2.png[]
 
 ### Exercice 3 - Ecriture de tests
 _Temps estimé : 20 mins_
