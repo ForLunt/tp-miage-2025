@@ -107,7 +107,7 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 
 NOTE : Pour lancer l’application Spring, sélectionner la classe `TodolistApplication` et faire bouton droit -> 'Run as' -> 'Java Application'.
 
-image ::images/envoieDonnee.png[]
+image::images/envoieDonnee.png[]
 
 * Quand le nouveau endpoint fonctionne, commiter, faire un push vers Github.
 
