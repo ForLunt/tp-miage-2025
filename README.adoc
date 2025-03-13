@@ -104,11 +104,15 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 ====
 
 NOTE: Pour lancer l'application Spring, sélectionner la classe `TodolistApplication` et faire bouton droit -> 'Run as' -> 'Java Application'.
+
 image::images/envoieDonnee.png[]
+
 * Quand le nouveau endpoint fonctionne, commiter, faire un push vers Github.
 
 * Vérifier avec DBeaver que les données sont bien en base PostgreSQL.
+
 image::images/receptionDBeaver.png[]
+
 ### Exercice 2 - Refactoring en architecture hexagonale
 _Temps estimé : 1 h 20_
 
@@ -131,6 +135,8 @@ Compléter ce code avec une fonctionnalité de création de `TodoItem`  persist�
 * renvoie un code `201` en cas de succès. 
 
 La fonctionnalité à implémenter est contractualisée par le port d'entrée `AddTodoItem`.
+
+image::images/Envoieexo2.png[]
 
 ### Exercice 3 - Ecriture de tests
 _Temps estimé : 20 mins_

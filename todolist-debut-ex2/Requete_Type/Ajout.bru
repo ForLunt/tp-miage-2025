@@ -1,0 +1,19 @@
+meta {
+  name: Ajout
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/todos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "id": "0f8-06eb17ba8d38",
+      "time": "2025-04-27T10:31:43Z",
+      "content": "Faire les courses"
+  }
+}
